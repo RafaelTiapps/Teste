@@ -38,6 +38,7 @@ itensRouter.put('/itens/:id', (req, res) => {
         }
     })
 })
+
 itensRouter.delete('/itens/:id', (req, res) => {
     const id: number = +req.params.id
     itensRepository.apagar(id, (notFound) => {
